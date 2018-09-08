@@ -5,8 +5,8 @@ require_relative '../config/environment'
 
 puts "Welcome to Tic Tac Toe!"
 puts "Type '0' to play with computer players, '1' to play as a single player, or '2' to play with two players."
-input=gets.strip
-if input=="0"
+input=gets.strip.to_i
+if input==0
   game = Game.new #(player_1=Players::Computer.new("X"), player_2=Players::Computer.new("O"), board = Board.new)
 end
 #game.play
